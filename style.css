@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #fffeff;
+    --button: #2e68a0;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/413/046/original/orange-purple-red-blue-gradient-soft-abstract-background-you-can-use-this-background-for-your-content-like-as-technology-video-gaming-promotion-card-banner-sports-presentation-website-etc-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    color: var(--primary-color);
+    max-width: 20%;
+    /* background-color: #2e68a0; */
+    margin: 90px; 
+}
+
+.nav {
+    margin-top: -8;
+    /* font-size: 1.2rem; */
+    /* margin: 50px 0 0 0 ; */
+}
+
+.profile {
+    /* margin: 90px; */
+    margin: 60px 0 0 90px ;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile img {
+    border-radius: 150%;
+}
+
+.first3  {
+    font-size: 1.3rem;
+}
+
+.discover, .radio, .podcast {
+    margin: 15px 0 0 0 ;
+}
+.Library {
+    font-size: 0.8rem;
+}
+.second4 {
+    font-size: 1rem;
+}
+
+.playlist, .japansongs, .summer {
+    margin: 20px 0 0 0 ;
+}
+
+.recent, .album, .song {
+    margin: 20px 0 0 0 ;
+}
+.last3 {
+    font-size: 0.8rem;
+}
+
+.second4, .last3 {
+    margin: 125px 0 0 0 ;
+}
+
+.Library {
+    margin-bottom: 10px;
+}
+
+.dots {
+    margin: 30px 0 0 90px;
+}
+
+.overlay {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 35%;
+    height: 100%;
+}
+
+
+
+
