@@ -17,17 +17,22 @@
 }
 
 body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/006/413/046/original/orange-purple-red-blue-gradient-soft-abstract-background-you-can-use-this-background-for-your-content-like-as-technology-video-gaming-promotion-card-banner-sports-presentation-website-etc-vector.jpg);
+    background-image: url(/images/Gradiant2.jpg);
+    /* transform: rotate(0deg); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    
 }
 
 .nav {
     color: var(--primary-color);
     max-width: 20%;
+    float: left;
     /* background-color: #2e68a0; */
     margin: 90px; 
+    position: relative;
+    cursor: pointer;
 }
 
 .nav {
@@ -39,8 +44,12 @@ body {
 .profile {
     /* margin: 90px; */
     margin: 60px 0 0 90px ;
-    display: flex;
+    display: flex;   
     gap: 1rem;
+}
+
+.profile h1 {
+    font-size: 50px;
 }
 
 .profile img {
@@ -49,6 +58,7 @@ body {
 
 .first3  {
     font-size: 1.3rem;
+    margin-top: -60px;
 }
 
 .discover, .radio, .podcast {
@@ -59,6 +69,7 @@ body {
 }
 .second4 {
     font-size: 1rem;
+    margin-left: 23px;
 }
 
 .playlist, .japansongs, .summer {
@@ -72,8 +83,9 @@ body {
     font-size: 0.8rem;
 }
 
+/* the gaps between the 3 sidenav sections */
 .second4, .last3 {
-    margin: 125px 0 0 0 ;
+    margin: 90px 0 0 0 ;
 }
 
 .Library {
@@ -85,15 +97,183 @@ body {
 }
 
 .overlay {
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 35%;
-    height: 100%;
+    /* border-radius: 10px; */
+    /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
+    width: 20%;
+    height: 100vh;
+    position: relative;
+    /* z-index of 1 to make the li background colour work */
+    z-index: 1;
 }
 
+.discover:hover {
+    background: red;
+}
 
+.overlay2 {
+    background: rgba(31, 29, 29, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 4px );
+    /* border-radius: 10px; */
+    width: 500%;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+}
 
+.main {
+    max-width: 100%;
+    min-height: 100vh;
+    position: absolute ;
+    top: 0;
+    /* left: 430px; */
+    /* top right bottom left 430px left*/
+    margin: 70px 0 0 470px;
+}
 
+.main-nav {
+    /* max-width: 80%; */
+    /* background-color: #2e68a0; */
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.search-container {
+    /* display: flex;
+    align-items: center; */
+    /* position: absolute;
+    left: 0; */
+}
+
+.search-input {
+    /* background-color: transparent; */
+    margin: 0 10px 0 10px ;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.search-input::placeholder {
+    padding: 10px;
+    color: white;
+    font-size:
+}
+
+.left-icons, .right-nav, .search {
+    display: flex;
+    align-items: center;
+}
+
+.main-img {
+    border-radius: 10px;
+    /* position: absolute;
+    left: 400px; */
+    /* margin: 30px 0 0 0 ; */
+    float: right;
+}
+
+/* Determine font size of main content headers */
+
+.search {
+    font-size: 1.1rem;
+    margin: 0 0 0 10px ; 
+    order: 1;
+}
+
+.popular {
+    font-size: 1.3rem;
+}
+
+.play-button {
+    font-size: 1.2rem;
+}
+.song-name {
+    font-size: 2.8rem;
+}
+.description {
+    font-size: 1.4rem;
+    
+}
+
+/* Align items vertically with margin */
+/* 2 empty img tags were in html that caused margin comment for now */
+.play-song {
+    margin: 30px 0 0 0 ;
+}
+
+.popular {
+    margin: 50px 0 0 0 ;
+}
+
+.song-name {
+    margin: 35px 0 0 0 ;
+}
+
+.description {
+    margin: 15px 0 0 0 ;
+}
+
+.play-button {
+    margin: 40px 0 0 0 ;
+}
+
+.play-button {
+    background-color: rgba(275, 275, 275, 0.25);
+   -webkit-backdrop-filter: blur(10px);
+    color: #fffeff;
+    /* 2 values is top + bottom and left + right */
+    padding: 3px 28px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.recent > a {
+    margin: 0 0 0 15px;
+}
+
+.album > a {
+    margin: 0 0 0 15px;
+}
+
+.song > a {
+    margin: 0 0 0 15px;
+}
+
+.fa-bell {
+    margin: 0 15px 0 0 ;
+}
+
+.left-icons input{
+    width: 80rem;
+    height: 38;
+    border-radius: 5px;
+}
+
+.fa-gear i{
+    float: right;
+}
+
+.nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur( 4px )    ;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    height: 3vh;
+    border-radius: 1.5em;
+}
+
+.discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
+    
+}
+
+/* we need to add padding or something else to make it so that there is space between the text and the hover
+   make the playlist text link hover */
