@@ -271,9 +271,9 @@ body {
     border-radius: 1.5em;
 }
 
-.discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
+/* .discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
     
-}
+} */
 
 /* we need to add padding or something else to make it so that there is space between the text and the hover
    make the playlist text link hover */
