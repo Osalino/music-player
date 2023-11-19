@@ -41,6 +41,10 @@ body {
     /* margin: 50px 0 0 0 ; */
 }
 
+.nav a{
+    /* padding: 10px; */
+}
+
 .profile {
     /* margin: 90px; */
     margin: 60px 0 0 90px ;
@@ -72,7 +76,7 @@ body {
     margin-left: 23px;
 }
 
-.playlist, .japansongs, .summer {
+.playlist, .japansongs, .summer, .recent, .album, .song {
     margin: 20px 0 0 0 ;
 }
 
@@ -269,11 +273,8 @@ body {
     text-align: center;
     height: 3vh;
     border-radius: 1.5em;
+    padding: 10px;
+    /* transform: scale(1.1);
+    transition: transform 0.3s ease; */
+    /* padding: 10px 10px 10px 10px; */ /* change to transition scale 1.1 in final version */
 }
-
-.discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
-    
-}
-
-/* we need to add padding or something else to make it so that there is space between the text and the hover
-   make the playlist text link hover */
