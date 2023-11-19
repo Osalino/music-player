@@ -278,3 +278,13 @@ body {
     transition: transform 0.3s ease; */
     /* padding: 10px 10px 10px 10px; */ /* change to transition scale 1.1 in final version */
 }
+<<<<<<< HEAD
+=======
+
+/* .discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
+    
+} */
+
+/* we need to add padding or something else to make it so that there is space between the text and the hover
+   make the playlist text link hover */
+>>>>>>> d19b4077a5ce4cd79e6df9bad40be761eda1bb65
