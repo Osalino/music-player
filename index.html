@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
     <title>Music Player</title>
-</head>
-<body >
+  </head>
+  <body>
     <!-- Make Navbar -->
     <!-- Make Main Body-->
     <div class="overlay">
-        <div class="overlay2">
-            <div class="dots">
-                <i class="fa-solid fa-circle-dot" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-circle-dot" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-circle-dot" style="color: #ffffff;"></i>
-            </div>
-            <div class="profile">
-                <img src="/images/profile2.jpg" alt="profile" width="100px" height="100px"> 
-                <h1>Alghi</h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <div class="first3">
-                        <li class="discover"><a href="#">Discover</a></li>
-                        <li class="radio"><a href="#">Radio</a></li>
-                        <li class="podcast"><a href="#">Podcast</a></li>
-                    </div>
-                    <div class="second4">
-                        <li class="Library"><a href="#">Library
-                        </a></li>
-                        <li class="recent">
-                            <i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>
-                            <a href="#">
-                            Recents 
-                        </a></li>
-                        <li class="album">
-                            <i class="fa-solid fa-compact-disc" style="color: #ffffff;"></i>
-                            <a href="#">
-                                Albums</a>
-                        </li>
-                        <li class="song">
-                            <i class="fa-solid fa-music" style="color: #ffffff;"></i>
-                            <a href="#">
-                                Songs</a>
-                            </li>
-                    </div>
-                    <div class="last3">
-                        <li class="playlist"><a href="#">Playlist</a></li>
-                        <li class="japansongs"><a href="#">Japanese Songs</a></li>
-                        <li class="summer"><a href="#">Summer 2020</a></li>
-                    </div>
-                </ul>
-            </nav>
+      <div class="overlay2">
+        <div class="dots">
+          <i class="fa-solid fa-circle-dot" style="color: #ffffff"></i>
+          <i class="fa-solid fa-circle-dot" style="color: #ffffff"></i>
+          <i class="fa-solid fa-circle-dot" style="color: #ffffff"></i>
         </div>
+        <div class="profile">
+          <img
+            src="/images/profile2.jpg"
+            alt="profile"
+            width="100px"
+            height="100px"
+          />
+          <h1>Alghi</h1>
+        </div>
+        <nav class="nav">
+          <ul>
+            <div class="first3">
+              <li class="discover"><a href="#">Discover</a></li>
+              <li class="radio"><a href="#">Radio</a></li>
+              <li class="podcast"><a href="#">Podcast</a></li>
+            </div>
+            <div class="second4">
+              <li class="Library"><a href="#">Library </a></li>
+              <li class="recent">
+                <i
+                  class="fa-solid fa-clock-rotate-left"
+                  style="color: #ffffff"
+                ></i>
+                <a href="#"> Recents </a>
+              </li>
+              <li class="album">
+                <i class="fa-solid fa-compact-disc" style="color: #ffffff"></i>
+                <a href="#"> Albums</a>
+              </li>
+              <li class="song">
+                <i class="fa-solid fa-music" style="color: #ffffff"></i>
+                <a href="#"> Songs</a>
+              </li>
+            </div>
+            <div class="last3">
+              <li class="playlist"><a href="#">Playlist</a></li>
+              <li class="japansongs"><a href="#">Japanese Songs</a></li>
+              <li class="summer"><a href="#">Summer 2020</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </div>
-            <section class="main">
-                <div class="main-nav">
-                        <div class="search-container">
-                            <div class="left-icons">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVR4nO2ZzUuUURSHXzdlNAURoW41ym2boIVfiX9BSy2iQAz8H5JaqO3dZxBESx382NaiD21Z1qZNu8yVUc0YPXHxQLfT9TYznjvzTr0PDAwD7/mdw33PPR+TZQUF+QPoAW4CD4BXwCegKp9tYBNYBG4A3VneAIaBMvCd2tkDloHBPARwFljj8KwAfa0K4hrwGTt2gYlmB3En4tAbYBYYBc4Dx+XTL7/NAVuR52eaFcTdAxx4AYzUYecS8LQlwbD/OmkqwCTQ0YC9DmBKbGjGUya2zgl3vQ4Y2B4EdgI502vj/e9i+naqWATh2R+SeuNTtrLv1wnNpKnIvs6tgM6ApYArdj7PG8mJGnPmpdJasmw7XBX2GTIxHtYbUVp7QJeFYdc7+bw28Tiu+VZpXrcw6hpAn1kTb+Oa80rzvoVR18X6jJp4G9ccU5obFkZdrfA5Z+JtXNO1Nj4fLYzqqlsy8TauWVKa31IEcsLE27jmSaW5+6+8Wu8tjG7mINmfWRh1M7bPnIm3cc17SnMhRUHcMvE2rvlOaV6xMNodaFGGTTwO67kp0qcCnLYy7rYdehpM1TTqnFy0FHCDj2bKTOCXznRA54K1iFvZ+FQtd1LS9erB6qGVfV+oT8ZPnx2Lll4GNz3qus3kGRvv/xScCBx9VSa7RpcP04GTcDwBjiQJRMRnCLMBXK7zdtKJrVkBOlsRDDIUzUt17pcGsCTfx6TY6ToRYyn1yYwHciYVy8DRlMH0BhYT9fIDeAystzQYh1vZyCugO4AYX4FHwEWx0Qms/uWZcvJgxJkutyhwM7Yk/7a0GF+AD7LqWQCuAqcCz+cnmMPiEjvQEmlWk95mTQ5mrQim2fAfnsw6cCzLO9R2mzX3/8dEJ3M7aycIB9NeQRwQTHsGoXImzZ+lBQVZlJ/po/gO7uhxQgAAAABJRU5ErkJggg==" alt="search icon" width="30px" height="30px">
-                                <input class="search-input" type="text" placeholder="Search">
-                            </div>
-                        </div>
-                        <div class="right-nav">
-                            <i class="fa-regular fa-bell" style="color: #ffffff; font-size: 23px;" ></i>
-                            <i class="fa fa-gear" style="color: #ffffff; font-size: 24px ;"></i>
-                        </div>
-                    </div>
-                    <div class="play-song">
-                        <h2 class="popular">Popular</h2>
-                        <h1 class="song-name">Spark Again</h1>
-                        <h2 class="description">Aimer</h2>
-                        <button class="play-button">Play</button>
-                        <img class="main-img" src="https://i.pinimg.com/564x/71/07/86/7107863c0d099c1c924c0fe15eda17ee.jpg" alt="fireplace" width="150px" height="150vh">
-                    </div>
-            </section>
-</body>
-</html> 
+    <section class="main">
+      <div class="main-nav">
+        <div class="search-container">
+          <div class="left-icons">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVR4nO2ZzUuUURSHXzdlNAURoW41ym2boIVfiX9BSy2iQAz8H5JaqO3dZxBESx382NaiD21Z1qZNu8yVUc0YPXHxQLfT9TYznjvzTr0PDAwD7/mdw33PPR+TZQUF+QPoAW4CD4BXwCegKp9tYBNYBG4A3VneAIaBMvCd2tkDloHBPARwFljj8KwAfa0K4hrwGTt2gYlmB3En4tAbYBYYBc4Dx+XTL7/NAVuR52eaFcTdAxx4AYzUYecS8LQlwbD/OmkqwCTQ0YC9DmBKbGjGUya2zgl3vQ4Y2B4EdgI502vj/e9i+naqWATh2R+SeuNTtrLv1wnNpKnIvs6tgM6ApYArdj7PG8mJGnPmpdJasmw7XBX2GTIxHtYbUVp7QJeFYdc7+bw28Tiu+VZpXrcw6hpAn1kTb+Oa80rzvoVR18X6jJp4G9ccU5obFkZdrfA5Z+JtXNO1Nj4fLYzqqlsy8TauWVKa31IEcsLE27jmSaW5+6+8Wu8tjG7mINmfWRh1M7bPnIm3cc17SnMhRUHcMvE2rvlOaV6xMNodaFGGTTwO67kp0qcCnLYy7rYdehpM1TTqnFy0FHCDj2bKTOCXznRA54K1iFvZ+FQtd1LS9erB6qGVfV+oT8ZPnx2Lll4GNz3qus3kGRvv/xScCBx9VSa7RpcP04GTcDwBjiQJRMRnCLMBXK7zdtKJrVkBOlsRDDIUzUt17pcGsCTfx6TY6ToRYyn1yYwHciYVy8DRlMH0BhYT9fIDeAystzQYh1vZyCugO4AYX4FHwEWx0Qms/uWZcvJgxJkutyhwM7Yk/7a0GF+AD7LqWQCuAqcCz+cnmMPiEjvQEmlWk95mTQ5mrQim2fAfnsw6cCzLO9R2mzX3/8dEJ3M7aycIB9NeQRwQTHsGoXImzZ+lBQVZlJ/po/gO7uhxQgAAAABJRU5ErkJggg=="
+              alt="search icon"
+              width="30px"
+              height="30px"
+            />
+            <input class="search-input" type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="right-nav">
+          <i
+            class="fa-regular fa-bell"
+            style="color: #ffffff; font-size: 23px"
+          ></i>
+          <i class="fa fa-gear" style="color: #ffffff; font-size: 24px"></i>
+        </div>
+      </div>
+      <div class="play-song">
+        <h2 class="popular">Popular</h2>
+        <div class="song-nam song-img">
+          <h1 class="song-name">Spark Again</h1>
+          <img class="main-img" src="https://i.pinimg.com/564x/71/07/86/7107863c0d099c1c924c0fe15eda17ee.jpg" alt="fireplace" width="170px" height="190vh">
+        </div>
+        <h2 class="description">Aimer</h2>
+        <button class="play-button">Play</button>
+      </div>
+    </section>
+  </body>
+</html>

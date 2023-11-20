@@ -178,7 +178,7 @@ body {
     /* position: absolute;
     left: 400px; */
     /* margin: 30px 0 0 0 ; */
-    float: right;
+    /* float: right; */
 }
 
 /* Determine font size of main content headers */
@@ -231,7 +231,7 @@ body {
    -webkit-backdrop-filter: blur(10px);
     color: #fffeff;
     /* 2 values is top + bottom and left + right */
-    padding: 3px 28px;
+    padding: 2px 25px;
     text-align: center;
     cursor: pointer;
     border-radius: 15px;
@@ -278,8 +278,11 @@ body {
     transition: transform 0.3s ease; */
     /* padding: 10px 10px 10px 10px; */ /* change to transition scale 1.1 in final version */
 }
-<<<<<<< HEAD
-=======
+
+.song-name, .song-img {
+    display: flex;
+    gap: 90px;
+}
 
 /* .discover, .radio, .podcast, .Library, .recent, .album, .song, .japansongs, .summer {
     
@@ -287,4 +290,3 @@ body {
 
 /* we need to add padding or something else to make it so that there is space between the text and the hover
    make the playlist text link hover */
->>>>>>> d19b4077a5ce4cd79e6df9bad40be761eda1bb65
