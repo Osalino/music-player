@@ -18,7 +18,7 @@
 
 body {
     background-image: url(/images/Gradiant2.jpg);
-    /* transform: rotate(0deg); */
+    /* transform: rotate(40deg);     */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -107,15 +107,13 @@ body {
     /* border-radius: 10px; */
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
     width: 20%;
-    height: 100vh;
+    height: 200vh;
     position: relative;
     /* z-index of 1 to make the li background colour work */
     z-index: 1;
 }
 
-.discover:hover {
-    background: red;
-}
+
 
 .overlay2 {
     background: rgba(31, 29, 29, 0.25);
@@ -123,9 +121,12 @@ body {
     -webkit-backdrop-filter: blur( 4px );
     /* border-radius: 10px; */
     width: 500%;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
-    z-index: -2;
+    z-index: -1;
+}
+section {
+    z-index: 1;
 }
 
 .main {
@@ -163,9 +164,8 @@ body {
 }
 
 .search-input::placeholder {
-    padding: 10px;
+    padding: 10px; 
     color: white;
-    font-size:
 }
 
 .left-icons, .right-nav, .search {
@@ -183,35 +183,34 @@ body {
 
 /* Determine font size of main content headers */
 
+
+
+
 .search {
     font-size: 1.1rem;
     margin: 0 0 0 10px ; 
     order: 1;
 }
 
-.popular {
+.status {
     font-size: 1.3rem;
 }
 
-.play-button {
-    font-size: 1.2rem;
-}
 .song-name {
+    font-family: Poppins 'sans-serif';
     font-size: 2.8rem;
 }
 .description {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     
 }
 
 /* Align items vertically with margin */
 /* 2 empty img tags were in html that caused margin comment for now */
-.play-song {
-    margin: 30px 0 0 0 ;
-}
 
-.popular {
-    margin: 50px 0 0 0 ;
+.status {
+    font-size: 34px;
+    font-weight: 100;
 }
 
 .song-name {
@@ -219,11 +218,14 @@ body {
 }
 
 .description {
-    margin: 15px 0 0 0 ;
+    margin-top: 33em ;
 }
 
 .play-button {
-    margin: 40px 0 0 0 ;
+    margin: 10px 0 0 0 ;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .play-button {
@@ -231,10 +233,10 @@ body {
    -webkit-backdrop-filter: blur(10px);
     color: #fffeff;
     /* 2 values is top + bottom and left + right */
-    padding: 2px 25px;
+    padding: 10px 55px;
     text-align: center;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 50px;
     border-style: none;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
@@ -265,7 +267,7 @@ body {
     float: right;
 }
 
-.nav ul li a:hover {
+.first3 li a:hover {
     background: rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur( 4px )    ;
     border-radius: 10px;
@@ -279,6 +281,29 @@ body {
     /* padding: 10px 10px 10px 10px; */ /* change to transition scale 1.1 in final version */
 }
 
+.second-li li a:hover {
+    background: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur( 4px )    ;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    height: 3vh;
+    border-radius: 1.5em;
+    padding: 10px;
+}
+
+.last-li li a:hover {
+    background: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur( 4px )    ;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    height: 3vh;
+    border-radius: 1.5em;
+    padding: 10px;
+}
+
+
 .song-name, .song-img {
     display: flex;
     gap: 90px;
@@ -288,5 +313,46 @@ body {
     
 } */
 
-/* we need to add padding or something else to make it so that there is space between the text and the hover
-   make the playlist text link hover */
+.main-img {
+    width: 32%;
+    height: 39vh;
+    position: absolute;
+    left: 43rem;
+    top: 0.2;
+}
+
+.description {
+    margin-top: 1em;
+}
+
+.song-name {
+   font-size: 60px; 
+}
+
+.play-song {
+    margin: 63px 0 0 0;
+}
+
+/*           SCROLELR                */
+
+
+.media-scroller img{
+    max-height: 320px;
+    border: 1px solid #ddd;
+    /* width: 23%;
+    height: 30vh;
+    margin: 0 23px 0 0; */
+    overflow-x: auto;
+    display: flex;
+
+}
+
+
+.media-scroller .item{
+    width: 310px;
+    height: 310px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+}
+
