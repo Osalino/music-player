@@ -344,6 +344,7 @@ section {
     margin: 0 23px 0 0; */
     overflow-x: auto;
     display: flex;
+    
 
 }
 
@@ -354,5 +355,9 @@ section {
     line-height: 110px;
     text-align: center;
     background-color: #ddd;
+    
 }
 
+@media only screen   {
+    
+}
