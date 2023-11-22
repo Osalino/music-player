@@ -166,6 +166,7 @@ section {
 .search-input::placeholder {
     padding: 10px; 
     color: white;
+    font-size: 1.15rem;
 }
 
 .left-icons, .right-nav, .search {
