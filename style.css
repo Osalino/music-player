@@ -315,11 +315,11 @@ section {
 } */
 
 .main-img {
-    width: 32%;
-    height: 39vh;
+    width: 28%;
+    height: 36vh;
     position: absolute;
-    left: 43rem;
-    top: 0.2;
+    left: 35rem;
+    top: 0.16;
 }
 
 .description {
@@ -345,8 +345,6 @@ section {
     margin: 0 23px 0 0; */
     overflow-x: auto;
     display: flex;
-    
-
 }
 
 
@@ -358,3 +356,29 @@ section {
     background-color: #ddd;
     
 }
+
+.main {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
+    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+/* .media-scroller {
+    margin: 0 0 0 100px;
+} */
+
+.bottom-play {
+    position: relative;
+    background-color: black;
+    height: 70px;
+    top: 370px;
+    left: 40%; /* Adjust the distance from the right */
+    margin: 10px; /* Add margin as needed */
+    color: #fff; /* Set text color */
+    background: rgba(255, 255, 255, 0.13); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
+    -webkit-backdrop-filter: blur( 4px );
+    font-size: 16px; /* Set font size */
+  }
+  
