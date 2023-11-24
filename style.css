@@ -89,8 +89,16 @@ body {
 .recent, .album, .song {
     margin: 20px 0 0 0 ;
 }
-.last3 {
+/* .last3 {
     font-size: 0.8rem;
+} */
+
+.playlist {
+    font-size: 0.8rem;
+}
+
+.japansongs, .summer {
+    font-size: 1rem;
 }
 
 /* the gaps between the 3 sidenav sections */
@@ -228,7 +236,7 @@ section {
 }
 
 .play-button {
-    margin: 10px 0 0 0 ;
+    margin: 23px 0 0 0 ;
     font-size: 23px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -305,17 +313,11 @@ section {
     padding: 10px;
 }
 
-
-.song-name, .song-img {
-    display: flex;
-    gap: 90px;
-}
-
 .main-img {
-    width: 28%;
+    width: 26.5%;
     height: 36vh;
     position: absolute;
-    left: 35rem;
+    left: 32rem;
     top: 0.16;
 }
 
@@ -361,7 +363,7 @@ section {
     overflow: scroll;
     white-space: nowrap;
     /* position: relative; */
-    width: 1460px;
+    max-width: 1460px;
 
 }
 /* 
@@ -376,12 +378,11 @@ section {
 
 .bottom-container {
     display: flex;
-    /* position: relative; */
-    background: rgba(61, 61, 61, 0.658);
+    background: rgba(61, 61, 61, 0.858);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
     -webkit-backdrop-filter: blur( 900px );
     height: 90px;
-    top: 870px;
+    top: 860px;
     left: 40%;
     /* Can find a better way of making it so that the search bar doesn't go all the way
     to the right, so it's in the main blur overlay thing */
@@ -389,37 +390,26 @@ section {
     border-radius: 10px;
     position: -webkit-sticky;
     position: sticky;
-    
 }
   
 .bottom-play {
-display: flex;
-
+    display: flex;
+    justify-content: center;
 }
   
 .bottom-img {
-width: 90px; 
-height: auto;
-margin: 0 5px 0 5px;
-padding: 14px;
-border-radius: 20px;
-
+    width: 90px; 
+    height: auto;
+    margin: 0 5px 0 5px;
+    padding: 14px;
+    border-radius: 20px;
 }
   
 .column {
-display: flex;
-flex-direction: column;
-justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-  
-/* .bottom-song-name, .bottom-song-descrip {
-margin: 5px 0;
-}
-
-.bottom-song-descrip {
-margin-top: 5px;
-} */
 
 .bottom-song-name {
 font-size: 1.33rem;
@@ -430,36 +420,32 @@ font-size: 1.10rem;
 
 }
 
-/* .play-icons {
+.play-icons {
     display: flex;
     gap: 40px;
     align-items: center;
+    /* Instead marin-left can use flex-end but not work */
+    margin-left: 510px;
 }
 
-.outer-circle {
+.play-icons i {
+    font-size: 1.3rem;
+}
+
+/* .outer-circle {
     background-color: blue;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-}
-.inner-circle {
+} */
+/* .inner-circle {
     background-color: red;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-} */
+}  */
+
 /* .play-icons {
     position: absolute;
     right: 0;
-} */
-
-/* 
-.media-scroller {
-    display: flex;
-    width: 100%;
 }
-
-.media-scroller img {
-    max-width: 50%;
-    max-height: 50vh;
-} */
