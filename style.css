@@ -22,10 +22,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.nav {
+#nav {
     color: var(--primary-color);
     max-width: 20%;
     float: left;
@@ -33,27 +34,32 @@ body {
     margin: 90px; 
     position: relative;
     cursor: pointer;
+    transition: ease-in-out 0.7s;
 }
 
-.nav {
-    margin-top: -8;
-    /* font-size: 1.2rem; */
-    /* margin: 50px 0 0 0 ; */
+#nav {
+    position: fixed;
+    margin-top: 340px;
+}
+.dots {
+    position: fixed;
 }
 
-.nav a{
-    /* padding: 10px; */
-}
 
 .profile {
     /* margin: 90px; */
-    margin: 60px 0 0 90px ;
+    margin: 100px 0 0 90px ;
     display: flex;   
     gap: 1rem;
+    position: fixed;
+    transition: ease-in-out 0.7s all;
+
 }
 
 .profile h1 {
     font-size: 50px;
+    margin-left: 34px;
+    transition:  0.10s;
 }
 
 .profile img {
@@ -97,10 +103,10 @@ body {
 }
 
 .dots {
-    margin: 30px 0 0 90px;
+    margin: 30px 0 0 30px;
 }
 
-.overlay {
+#overlay {
     background: rgba(255, 255, 255, 0.13);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
     -webkit-backdrop-filter: blur( 4px );
@@ -108,21 +114,23 @@ body {
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
     width: 20%;
     height: 200vh;
-    position: relative;
+    position: sticky;
     /* z-index of 1 to make the li background colour work */
     z-index: 1;
+    transition: ease-in-out 0.7s;
+
 }
 
 
 
-.overlay2 {
+#overlay2 {
     background: rgba(31, 29, 29, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     -webkit-backdrop-filter: blur( 4px );
     /* border-radius: 10px; */
     width: 500%;
     height: 200vh;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 section {
@@ -180,6 +188,8 @@ section {
     left: 400px; */
     /* margin: 30px 0 0 0 ; */
     /* float: right; */
+    position: relative;
+
 }
 
 .search {
@@ -326,48 +336,65 @@ section {
 
 .media-scroller img{
     max-height: 320px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     /* width: 23%;
     height: 30vh;
     margin: 0 23px 0 0; */
     overflow-x: auto;
-    display: flex;
+    padding: 13px;
+   border-radius: 10%;
+   
 }
 
 
 .media-scroller .item{
-    width: 310px;
-    height: 310px;
-    line-height: 110px;
-    text-align: center;
-    background-color: #ddd;
+    /* line-height: 110px; */
+    /* text-align: center; */
+    /* position: relative; */
+
+    /* background-color: #ddd; */
     
 }
 
+.media-scroller {
+    /* background-color: #333; */
+    overflow: scroll;
+    white-space: nowrap;
+    /* position: relative; */
+    width: 1460px;
+
+}
+/* 
 .main {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
     -webkit-backdrop-filter: blur( 4px );
     backdrop-filter: blur(4px);
     z-index: 1000;
-}
+} */
+
+/*                PLayer                              */
 
 .bottom-container {
     display: flex;
-    position: relative;
-    background: rgba(92, 92, 92, 1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.61);
-    -webkit-backdrop-filter: blur( 4px );
+    /* position: relative; */
+    background: rgba(61, 61, 61, 0.658);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
+    -webkit-backdrop-filter: blur( 900px );
     height: 90px;
-    top: 370px;
+    top: 870px;
     left: 40%;
     /* Can find a better way of making it so that the search bar doesn't go all the way
     to the right, so it's in the main blur overlay thing */
     margin-right: 550px; 
     border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    
 }
   
 .bottom-play {
 display: flex;
+
 }
   
 .bottom-img {
@@ -376,12 +403,14 @@ height: auto;
 margin: 0 5px 0 5px;
 padding: 14px;
 border-radius: 20px;
+
 }
   
 .column {
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 }
   
 /* .bottom-song-name, .bottom-song-descrip {
@@ -398,6 +427,7 @@ font-size: 1.33rem;
 
 .bottom-song-descrip {
 font-size: 1.10rem;
+
 }
 
 /* .play-icons {
@@ -422,4 +452,14 @@ font-size: 1.10rem;
     position: absolute;
     right: 0;
 } */
-  
+
+/* 
+.media-scroller {
+    display: flex;
+    width: 100%;
+}
+
+.media-scroller img {
+    max-width: 50%;
+    max-height: 50vh;
+} */
