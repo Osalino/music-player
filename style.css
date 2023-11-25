@@ -190,6 +190,10 @@ section {
     align-items: center;
 }
 
+.right-nav {
+    width: 100%;
+}
+
 .main-img {
     border-radius: 10px;
     /* position: absolute;
