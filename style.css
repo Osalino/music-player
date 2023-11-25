@@ -165,25 +165,29 @@ section {
 }
 
 .search-container {
-    /* display: flex;
-    align-items: center; */
-    /* position: absolute;
-    left: 0; */
+    display: flex;
+    align-items: center;
 }
 
 .search-input {
-    /* background-color: transparent; */
     margin: 0 10px 0 10px ;
     background: transparent;
     border: none;
     color: white;
+    flex: 1;
 }
+
+/* .search-input.has-content {
+    margin-left: 10px;
+} */
 
 .search-input::placeholder {
     padding: 10px; 
     color: white;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    text-align: ;
 }
+
 
 .left-icons, .right-nav, .search {
     display: flex;
@@ -196,12 +200,7 @@ section {
 
 .main-img {
     border-radius: 10px;
-    /* position: absolute;
-    left: 400px; */
-    /* margin: 30px 0 0 0 ; */
-    /* float: right; */
     position: relative;
-
 }
 
 .search {
@@ -321,8 +320,7 @@ section {
     width: 26.5%;
     height: 36vh;
     position: absolute;
-    left: 32rem;
-    top: 0.16;
+    left: 30rem;
 }
 
 .description {
@@ -334,7 +332,8 @@ section {
 }
 
 .play-song {
-    margin: 63px 0 0 0;
+    margin: 70px 0 0 0;
+    height: auto;
 }
 
 /*           SCROLELR                */
@@ -386,11 +385,13 @@ section {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
     -webkit-backdrop-filter: blur( 900px );
     height: 90px;
-    top: 860px;
-    left: 40%;
+    /* top: 860px; */
+    top: 88vh;
+    right: 100%;
+    width: 50%;
     /* Can find a better way of making it so that the search bar doesn't go all the way
     to the right, so it's in the main blur overlay thing */
-    margin-right: 550px; 
+    /* margin-right: 550px; */ 
     border-radius: 10px;
     position: -webkit-sticky;
     position: sticky;
@@ -399,11 +400,12 @@ section {
 .bottom-play {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
   
 .bottom-img {
     width: 90px; 
-    height: auto;
+    height: 90px;
     margin: 0 5px 0 5px;
     padding: 14px;
     border-radius: 20px;
@@ -420,20 +422,41 @@ font-size: 1.33rem;
 }
 
 .bottom-song-descrip {
-font-size: 1.10rem;
+font-size: 1rem;
 
 }
 
 .play-icons {
     display: flex;
-    gap: 40px;
+    gap: 28px;
     align-items: center;
     /* Instead marin-left can use flex-end but not work */
-    margin-left: 510px;
+    margin-left: 300px;
 }
 
 .play-icons i {
     font-size: 1.3rem;
+}
+
+.outer-circle {
+    width: 65px;
+    height: 65px;
+    border: 6px solid rgb(21, 86, 129);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.inner-circle {
+    width: 55px;
+    height: 55px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 /* .outer-circle {
