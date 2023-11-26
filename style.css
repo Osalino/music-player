@@ -121,7 +121,7 @@ body {
     /* border-radius: 10px; */
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
     width: 20%;
-    height: 200vh;
+    min-height: 200vh;
     position: sticky;
     /* z-index of 1 to make the li background colour work */
     z-index: 1;
@@ -137,7 +137,7 @@ body {
     -webkit-backdrop-filter: blur( 4px );
     /* border-radius: 10px; */
     width: 500%;
-    height: 200vh;
+    min-height: 200vh;
     position: fixed;
     z-index: -1;
 }
@@ -339,36 +339,37 @@ section {
 /*           SCROLELR                */
 
 
-.media-scroller img{
-    max-height: 320px;
-    /* border: 1px solid #ddd; */
-    /* width: 23%;
-    height: 30vh;
-    margin: 0 23px 0 0; */
-    overflow-x: auto;
-    padding: 13px;
-   border-radius: 10%;
-   
-}
-
-
-.media-scroller .item{
-    /* line-height: 110px; */
-    /* text-align: center; */
-    /* position: relative; */
-
-    /* background-color: #ddd; */
-    
-}
-
 .media-scroller {
-    /* background-color: #333; */
-    overflow: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     white-space: nowrap;
-    /* position: relative; */
     max-width: 1460px;
-
-}
+  }
+  
+  .item-container {
+    position: relative; /* Set container as relative for absolute positioning */
+    margin: 10px;
+  }
+  
+  .item {
+    width: 320px;
+    height: 320px;
+    border-radius: 10%;
+    position: relative; /* Set image as relative for absolute positioning */
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+  }
+  
 /* 
 .main {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
@@ -395,6 +396,7 @@ section {
     border-radius: 10px;
     position: -webkit-sticky;
     position: sticky;
+    z-index: 100;
 }
   
 .bottom-play {
@@ -459,20 +461,3 @@ font-size: 1rem;
     color: white;
 }
 
-/* .outer-circle {
-    background-color: blue;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-} */
-/* .inner-circle {
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}  */
-
-/* .play-icons {
-    position: absolute;
-    right: 0;
-}
