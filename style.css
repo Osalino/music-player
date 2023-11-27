@@ -361,8 +361,18 @@ section {
 }
   
   .item-container {
-    position: relative; /* Set container as relative for absolute positioning */
+    position: relative;
     margin: 10px;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caption h1 {
+    font-size: 1.3rem;
+  }
+  .caption h2 {
+    font-size: 1rem;
   }
   
   .item {
@@ -381,8 +391,7 @@ section {
     top: 290px;
     color: white;
     /* justify-content: center; */
-    text-align: end ;
-    font-size: 0.8rem;
+    text-align: center ;
     padding-bottom: 10px;
   }
   
