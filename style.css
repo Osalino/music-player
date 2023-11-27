@@ -53,7 +53,6 @@ body {
     gap: 1rem;
     position: fixed;
     transition: ease-in-out 0.7s all;
-
 }
 
 .profile h1 {
@@ -115,14 +114,15 @@ body {
 }
 
 #overlay {
-    background: rgba(255, 255, 255, 0.13);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
+    background: rgb(84, 2, 2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.645);
     -webkit-backdrop-filter: blur( 4px );
     /* border-radius: 10px; */
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
     width: 20%;
     min-height: 200vh;
     position: sticky;
+    position: relative;
     /* z-index of 1 to make the li background colour work */
     z-index: 1;
     transition: ease-in-out 0.7s;
@@ -139,7 +139,7 @@ body {
     width: 500%;
     min-height: 200vh;
     position: fixed;
-    z-index: -1;
+    z-index: 8;
 }
 section {
     z-index: 1;
@@ -153,6 +153,7 @@ section {
     /* left: 430px; */
     /* top right bottom left 430px left*/
     margin: 70px 0 0 470px;
+    z-index: 10;
 }
 
 .main-nav {
@@ -292,7 +293,8 @@ section {
     text-align: center;
     height: 3vh;
     border-radius: 1.5em;
-    padding: 10px;}
+    padding: 10px;
+}
 
 .second-li li a:hover {
     background: rgba(0, 0, 0, 0.25);
@@ -342,10 +344,21 @@ section {
 .media-scroller {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
-    max-width: 1460px;
-  }
+    max-width: 2460px;
+    margin-top: -130px; 
+    z-index: -100;
+}
+
+::-webkit-scrollbar {
+}
+
+.media-scroller img {
+    width: 200%;
+    height: 49vh;
+    padding: 120px;
+}
   
   .item-container {
     position: relative; /* Set container as relative for absolute positioning */
@@ -356,16 +369,19 @@ section {
     width: 320px;
     height: 320px;
     border-radius: 10%;
-    position: relative; /* Set image as relative for absolute positioning */
+    position: relative; 
+    /* Set image as relative for absolute positioning */
   }
   
   .caption {
     position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 190px;
+    top: 290px;
     color: white;
-    text-align: center;
+    /* justify-content: center; */
+    text-align: end ;
     font-size: 0.8rem;
     padding-bottom: 10px;
   }
@@ -424,8 +440,7 @@ font-size: 1.33rem;
 }
 
 .bottom-song-descrip {
-font-size: 1rem;
-
+    font-size: 1rem;
 }
 
 .play-icons {
@@ -449,7 +464,8 @@ font-size: 1rem;
     align-items: center;
     justify-content: center;
 }
-  
+
+
 .inner-circle {
     width: 55px;
     height: 55px;
@@ -459,5 +475,15 @@ font-size: 1rem;
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.media-scroller {
+    margin-left: -20em;
+}
+
+
+
+.media-scroller {
+
 }
 
