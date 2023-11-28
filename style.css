@@ -471,7 +471,8 @@ font-size: 1.33rem;
 
 .play-icons {
     display: flex;
-    gap: 27px;
+    /* gap: 27px; */
+    gap: 45px;
     align-items: center;
     /* Instead marin-left can use flex-end but not work */
     margin-left: 300px;
