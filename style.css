@@ -340,6 +340,8 @@ section {
 
 /*           SCROLELR                */
 
+/* Added padding left on media scroller */
+
 
 .media-scroller {
     display: flex;
@@ -349,10 +351,25 @@ section {
     max-width: 2460px;
     margin-top: -130px; 
     z-index: -100;
+    scrollbar-width: thin;
 }
 
-::-webkit-scrollbar {
-}
+/* ::-webkit-scrollbar {
+    width: 10px;
+   }
+   
+   ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+   }
+   
+   ::-webkit-scrollbar-thumb {
+    background: #888;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+   }
+    */
 
 .media-scroller img {
     width: 200%;
