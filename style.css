@@ -534,3 +534,26 @@ font-size: 1.33rem;
           border-radius: 0px;
           
 }
+
+.progress::-webkit-progress-bar {
+    background-color: white;
+}
+
+.progress::-webkit-progress-value {
+    background-color: rgb(124, 0, 128);
+}
+
+.progress::-moz-progress-bar {
+    background-color: rgb(124, 0, 128);
+}
+
+.progress {
+    
+    appearance: none;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 5px;
+    background-color: #eee;
+}
