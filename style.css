@@ -17,10 +17,11 @@
 }
 
 body {
-    background-image: url(/images/Gradiant2.jpg);
+    background-image: url(/images/purple.jpg);
     /* transform: rotate(40deg);     */
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -28,18 +29,24 @@ body {
 
 #nav {
     color: var(--primary-color);
-    max-width: 20%;
+    /* max-width: %; */
     float: left;
     /* background-color: #2e68a0; */
-    margin: 90px; 
+    margin: 3px;
     position: relative;
     cursor: pointer;
     transition: ease-in-out 0.7s;
+
+}
+
+#nav h1{
+    
+
 }
 
 #nav {
     position: fixed;
-    margin-top: 340px;
+    margin-top: 390px;
 }
 .dots {
     position: fixed;
@@ -48,9 +55,9 @@ body {
 
 .profile {
     /* margin: 90px; */
-    margin: 100px 0 0 90px ;
-    display: flex;   
-    gap: 1rem;
+    margin: 90px 0 0 90px ;
+    /* display: flex;    */
+    /* gap: 3rem; */
     position: fixed;
     transition: ease-in-out 0.7s all;
 }
@@ -78,7 +85,7 @@ body {
 }
 .second4 {
     font-size: 1rem;
-    margin-left: 23px;
+    margin-top: 45em;
 }
 
 .playlist, .japansongs, .summer, .recent, .album, .song {
@@ -114,23 +121,26 @@ body {
 }
 
 #overlay {
-    background: rgb(84, 2, 2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.645);
-    -webkit-backdrop-filter: blur( 4px );
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     /* border-radius: 10px; */
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
-    width: 20%;
-    min-height: 200vh;
-    position: sticky;
+    width: 30%;
+    height: 300dvh;
     position: relative;
     /* z-index of 1 to make the li background colour work */
-    z-index: 1;
+    z-index: 11;
     transition: ease-in-out 0.7s;
 
 }
 
 
-
+/* 
 #overlay2 {
     background: rgba(31, 29, 29, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -139,8 +149,8 @@ body {
     width: 500%;
     min-height: 200vh;
     position: fixed;
-    z-index: 8;
-}
+    z-index: 122;
+} */
 section {
     z-index: 1;
 }
@@ -163,6 +173,7 @@ section {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    position: sticky;
 }
 
 .search-container {
@@ -186,7 +197,7 @@ section {
     padding: 10px; 
     color: white;
     font-size: 1.1rem;
-    text-align: ;
+    text-align: center;
 }
 
 
@@ -299,12 +310,11 @@ section {
 .second-li li a:hover {
     background: rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur( 4px )    ;
-    border-radius: 10px;
-    width: 120px;
-    text-align: center;
-    height: 3vh;
+    /* width: 120px; */
+    align-items: center;
+    /* height: 3vh; */
     border-radius: 1.5em;
-    padding: 10px;
+    padding: 5px;
 }
 
 .last-li li a:hover {
@@ -349,9 +359,8 @@ section {
     overflow-x: scroll;
     white-space: nowrap;
     max-width: 2460px;
-    margin-top: -130px; 
-    z-index: -100;
-    scrollbar-width: thin;
+    margin-top: -200px; 
+    scroll-snap-type: inline mandatory;
 }
 
 /* ::-webkit-scrollbar {
@@ -371,46 +380,47 @@ section {
    }
     */
 
-.media-scroller img {
-    width: 200%;
-    height: 49vh;
-    padding: 120px;
+
+.media-scroller  {
+    margin-top: 50px;
 }
   
-  .item-container {
+.item-container {
     position: relative;
-    margin: 10px;
-    position: flex;
+    margin-right: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .caption h1 {
+.caption h1 {
     font-size: 1.3rem;
-  }
+}
   .caption h2 {
     font-size: 1rem;
-  }
+}
   
-  .item {
-    width: 320px;
-    height: 320px;
-    border-radius: 10%;
-    position: relative; 
-    /* Set image as relative for absolute positioning */
-  }
+.media-scroller img{ 
+    width: 210%;
+    height: 30vh; 
+    border-radius: 10%; 
+    position: relative;  
+    margin-left: 230px;
+    /* Set image as relative for absolute positioning  */
+}
   
-  .caption {
+.caption {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 190px;
-    top: 290px;
+    left: 130px;
+    top: 230px;
     color: white;
-    /* justify-content: center; */
+    justify-content: center;
     text-align: center ;
     padding-bottom: 10px;
-  }
+    z-index: 1;
+}
   
 /* 
 .main {
@@ -492,7 +502,7 @@ font-size: 1.33rem;
     justify-content: center;
 }
 
-
+    
 .inner-circle {
     width: 55px;
     height: 55px;
@@ -503,9 +513,9 @@ font-size: 1.33rem;
     justify-content: center;
     color: white;
 }
-
+   
 .media-scroller {
-    margin-left: -20em;
+    margin-left: -25em;
 }
 
 
@@ -514,3 +524,13 @@ font-size: 1.33rem;
 
 }
 
+::-webkit-scrollbar:horizontal{
+    width: 65%;
+    height: 8888vh;
+    background-color: red;
+  }
+  ::-webkit-scrollbar-thumb:horizontal{
+          background: #000000;
+          border-radius: 0px;
+          
+}
