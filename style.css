@@ -55,7 +55,7 @@ body {
 
 .profile {
     /* margin: 90px; */
-    margin: 90px 0 0 90px ;
+    margin: 90px 0 0 100px ;
     /* display: flex;    */
     /* gap: 3rem; */
     position: fixed;
@@ -130,13 +130,12 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     /* border-radius: 10px; */
     /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
-    width: 30%;
+    width: 22%;
     height: 300dvh;
     position: relative;
     /* z-index of 1 to make the li background colour work */
     z-index: 11;
     transition: ease-in-out 0.7s;
-
 }
 
 
@@ -557,3 +556,140 @@ font-size: 1.33rem;
     height: 5px;
     background-color: #eee;
 }
+
+@media only screen and (max-width: 767px) {
+
+    #overlay {
+        width: 25%;
+    }
+
+    #nav {
+        width: 25%;
+        margin: 100px 0 0 0;
+    }
+
+    .dots {
+        display: flex;
+        gap: 0.5rem;
+        width: 20px;
+        height: 30px;
+    }
+
+    .profile {
+        margin: 100px 0 100px 25px;     
+    }
+
+    #profileimg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #nav {
+        margin: 200px 0 10px 10px;
+    }
+ 
+    .main {
+        /* margin: 35px 0 0 100px; */
+        margin: 5% 0 0 15%;
+    }
+ 
+    .main-img {
+        width: 13.25%;
+        height: 21vh;
+        left: 15.5rem;
+    }
+
+    .fa-clock-rotate-left, fa-compact-disc, fa-music {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .first3 {
+        font-size: 1rem;
+    }
+    .second4 {
+        font-size: 1rem;
+    }
+    .last3 {
+        font-size: 1rem;
+    }
+
+    .description {
+        margin-top: 0.5em;
+    }
+
+    .col1, .col2, .col3, .col4 {
+        display: flex;
+        justify-content: center;
+    }
+ 
+    /* .song-name {
+        font-size: 30px;
+    }
+ 
+ 
+    .play-song {
+        margin: 35px 0 0 0;
+    }
+ 
+    .media-scroller {
+        margin-top: 25px;
+    }
+ 
+    .item-container {
+        margin-right: 50px;
+    }
+ 
+    .media-scroller img {
+        width: 105%;
+        height: 15vh;
+        margin-left: 115px;
+    }
+ 
+    .caption h1 {
+        font-size: 1rem;
+    }
+ 
+    .caption h2 {
+        font-size: 0.8rem;
+    }
+ 
+    .bottom-container {
+        top: 77vh;
+        width: 40%;
+    }
+ 
+    .bottom-img {
+        width: 45px;
+        height: 45px;
+        margin: 0 2.5px 0 2.5px;
+        padding: 7px;
+    }
+ 
+    .bottom-song-name {
+        font-size: 1rem;
+    }
+ 
+    .bottom-song-descrip {
+        font-size: 0.8rem;
+    }
+ 
+    .play-icons {
+        margin-left: 150px;
+    }
+ 
+    .play-icons i {
+        font-size: 1rem;
+    }
+ 
+    .outer-circle {
+        width: 32.5px;
+        height: 32.5px;
+        border: 3px solid rgb(21, 86, 129);
+    } */
+ }
+ 
