@@ -3,7 +3,6 @@
 :root {
     --primary-color: #fffeff;
     --button: #2e68a0;
-
 }
 
 * {
@@ -18,7 +17,6 @@
 
 body {
     background-image: url(/images/purple.jpg);
-    /* transform: rotate(40deg);     */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,19 +27,11 @@ body {
 
 #nav {
     color: var(--primary-color);
-    /* max-width: %; */
     float: left;
-    /* background-color: #2e68a0; */
     margin: 3px;
     position: relative;
     cursor: pointer;
     transition: ease-in-out 0.7s;
-
-}
-
-#nav h1{
-    
-
 }
 
 #nav {
@@ -52,12 +42,8 @@ body {
     position: fixed;
 }
 
-
 .profile {
-    /* margin: 90px; */
     margin: 90px 0 0 100px ;
-    /* display: flex;    */
-    /* gap: 3rem; */
     position: fixed;
     transition: ease-in-out 0.7s all;
 }
@@ -92,13 +78,6 @@ body {
     margin: 20px 0 0 0 ;
 }
 
-.recent, .album, .song {
-    margin: 20px 0 0 0 ;
-}
-/* .last3 {
-    font-size: 0.8rem;
-} */
-
 .playlist {
     font-size: 0.8rem;
 }
@@ -128,28 +107,13 @@ body {
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    /* border-radius: 10px; */
-    /* border: 0 1px 1px 0 solid rgba( 255, 255, 255, 0.18 ); */
     width: 22%;
     height: 300dvh;
     position: relative;
-    /* z-index of 1 to make the li background colour work */
     z-index: 11;
     transition: ease-in-out 0.7s;
 }
 
-
-/* 
-#overlay2 {
-    background: rgba(31, 29, 29, 0.25);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    -webkit-backdrop-filter: blur( 4px );
-    /* border-radius: 10px; */
-    width: 500%;
-    min-height: 200vh;
-    position: fixed;
-    z-index: 122;
-} */
 section {
     z-index: 1;
 }
@@ -159,16 +123,11 @@ section {
     min-height: 100vh;
     position: absolute ;
     top: 0;
-    /* left: 430px; */
-    /* top right bottom left 430px left*/
     margin: 70px 0 0 470px;
     z-index: 10;
 }
 
 .main-nav {
-    /* max-width: 80%; */
-    /* background-color: #2e68a0; */
-    /* max-width: 100%; */
     display: flex;
     justify-content: space-between;
     max-width: 100%;
@@ -188,17 +147,12 @@ section {
     flex: 1;
 }
 
-/* .search-input.has-content {
-    margin-left: 10px;
-} */
-
 .search-input::placeholder {
     padding: 10px; 
     color: white;
     font-size: 1.1rem;
     text-align: center;
 }
-
 
 .left-icons, .right-nav, .search {
     display: flex;
@@ -228,13 +182,6 @@ section {
     font-family: Poppins 'sans-serif';
     font-size: 2.8rem;
 }
-.description {
-    /* font-size: 1.4rem; */
-    
-}
-
-/* Align items vertically with margin */
-/* 2 empty img tags were in html that caused margin comment for now */
 
 .status {
     font-size: 34px;
@@ -260,7 +207,6 @@ section {
     background-color: rgba(275, 275, 275, 0.25);
    -webkit-backdrop-filter: blur(10px);
     color: #fffeff;
-    /* 2 values is top + bottom and left + right */
     padding: 10px 55px;
     text-align: center;
     cursor: pointer;
@@ -269,15 +215,7 @@ section {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
-.recent > a {
-    margin: 0 0 0 15px;
-}
-
-.album > a {
-    margin: 0 0 0 15px;
-}
-
-.song > a {
+.recent > a, .album > a, .song > a {
     margin: 0 0 0 15px;
 }
 
@@ -309,9 +247,7 @@ section {
 .second-li li a:hover {
     background: rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur( 4px )    ;
-    /* width: 120px; */
     align-items: center;
-    /* height: 3vh; */
     border-radius: 1.5em;
     padding: 5px;
 }
@@ -347,11 +283,6 @@ section {
     height: auto;
 }
 
-/*           SCROLELR                */
-
-/* Added padding left on media scroller */
-
-
 .media-scroller {
     display: flex;
     flex-wrap: nowrap;
@@ -361,24 +292,6 @@ section {
     margin-top: -200px; 
     scroll-snap-type: inline mandatory;
 }
-
-/* ::-webkit-scrollbar {
-    width: 10px;
-   }
-   
-   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-   }
-   
-   ::-webkit-scrollbar-thumb {
-    background: #888;
-   }
-   
-   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-   }
-    */
-
 
 .media-scroller  {
     margin-top: 50px;
@@ -405,7 +318,6 @@ section {
     border-radius: 10%; 
     position: relative;  
     margin-left: 230px;
-    /* Set image as relative for absolute positioning  */
 }
   
 .caption {
@@ -420,16 +332,6 @@ section {
     padding-bottom: 10px;
     z-index: 1;
 }
-  
-/* 
-.main {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
-    -webkit-backdrop-filter: blur( 4px );
-    backdrop-filter: blur(4px);
-    z-index: 1000;
-} */
-
-/*                PLayer                              */
 
 .bottom-container {
     display: flex;
@@ -437,13 +339,9 @@ section {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
     -webkit-backdrop-filter: blur( 900px );
     height: 90px;
-    /* top: 860px; */
     top: 88vh;
     right: 100%;
     width: 50%;
-    /* Can find a better way of making it so that the search bar doesn't go all the way
-    to the right, so it's in the main blur overlay thing */
-    /* margin-right: 550px; */ 
     border-radius: 10px;
     position: -webkit-sticky;
     position: sticky;
@@ -480,10 +378,8 @@ font-size: 1.33rem;
 
 .play-icons {
     display: flex;
-    /* gap: 27px; */
     gap: 45px;
     align-items: center;
-    /* Instead marin-left can use flex-end but not work */
     margin-left: 300px;
 }
 
@@ -517,12 +413,6 @@ font-size: 1.33rem;
     margin-left: -25em;
 }
 
-
-
-.media-scroller {
-
-}
-
 ::-webkit-scrollbar:horizontal{
     width: 65%;
     height: 8888vh;
@@ -530,8 +420,7 @@ font-size: 1.33rem;
   }
   ::-webkit-scrollbar-thumb:horizontal{
           background: #000000;
-          border-radius: 0px;
-          
+          border-radius: 0px;  
 }
 
 .progress::-webkit-progress-bar {
@@ -547,7 +436,6 @@ font-size: 1.33rem;
 }
 
 .progress {
-    
     appearance: none;
     z-index: 100;
     position: fixed;
@@ -558,7 +446,6 @@ font-size: 1.33rem;
 }
 
 @media only screen and (max-width: 767px) {
-
     #overlay {
         width: 25%;
     }
@@ -626,70 +513,4 @@ font-size: 1.33rem;
         display: flex;
         justify-content: center;
     }
- 
-    /* .song-name {
-        font-size: 30px;
-    }
- 
- 
-    .play-song {
-        margin: 35px 0 0 0;
-    }
- 
-    .media-scroller {
-        margin-top: 25px;
-    }
- 
-    .item-container {
-        margin-right: 50px;
-    }
- 
-    .media-scroller img {
-        width: 105%;
-        height: 15vh;
-        margin-left: 115px;
-    }
- 
-    .caption h1 {
-        font-size: 1rem;
-    }
- 
-    .caption h2 {
-        font-size: 0.8rem;
-    }
- 
-    .bottom-container {
-        top: 77vh;
-        width: 40%;
-    }
- 
-    .bottom-img {
-        width: 45px;
-        height: 45px;
-        margin: 0 2.5px 0 2.5px;
-        padding: 7px;
-    }
- 
-    .bottom-song-name {
-        font-size: 1rem;
-    }
- 
-    .bottom-song-descrip {
-        font-size: 0.8rem;
-    }
- 
-    .play-icons {
-        margin-left: 150px;
-    }
- 
-    .play-icons i {
-        font-size: 1rem;
-    }
- 
-    .outer-circle {
-        width: 32.5px;
-        height: 32.5px;
-        border: 3px solid rgb(21, 86, 129);
-    } */
- }
  
