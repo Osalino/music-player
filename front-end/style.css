@@ -20,18 +20,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-#nav {
-    color: var(--primary-color);
-    float: left;
-    margin: 3px;
-    position: relative;
-    cursor: pointer;
-    transition: ease-in-out 0.7s;
 }
 
 #nav {
@@ -119,8 +109,7 @@ section {
 }
 
 .main {
-    max-width: 100%;
-    min-height: 100vh;
+    flex-direction: column;
     position: absolute ;
     top: 0;
     margin: 70px 0 0 470px;
@@ -514,3 +503,7 @@ font-size: 1.33rem;
         justify-content: center;
     }
  
+.container {
+    display: flex;
+}
+
